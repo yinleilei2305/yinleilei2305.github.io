@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>尹磊磊 · 作品集</title>
+<style>
+  :root{
+    --ink:#1a1a1a; --sub:#6b6b6b; --line:#e5e5e5; --bg:#ffffff;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{
+    font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+    color:var(--ink); background:var(--bg); line-height:1.75;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:680px;margin:0 auto;padding:72px 24px 80px;}
+  header{margin-bottom:56px;}
+  h1{font-size:30px;font-weight:600;letter-spacing:.02em;}
+  .role{color:var(--sub);font-size:15px;margin-top:6px;}
+  .intro{font-size:15px;margin-top:28px;max-width:34em;}
+  section{border-top:1px solid var(--line);padding:36px 0 4px;margin-top:36px;}
+  h2{font-size:14px;font-weight:600;letter-spacing:.18em;color:var(--ink);margin-bottom:22px;}
+  .rows div{display:flex;justify-content:space-between;align-items:baseline;padding:9px 0;border-bottom:1px solid var(--line);}
+  .rows div:last-child{border-bottom:none;}
+  .rows .k{color:var(--sub);font-size:14px;}
+  .rows .v{font-size:17px;font-weight:600;font-variant-numeric:tabular-nums;}
+  .shots{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+  .shots img{width:100%;display:block;border:1px solid var(--line);cursor:zoom-in;}
+  .cap{color:var(--sub);font-size:13px;margin-top:10px;}
+  p.body{font-size:15px;margin-bottom:14px;max-width:36em;}
+  .videos{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+  .vitem video{width:100%;aspect-ratio:9/16;object-fit:cover;background:#000;display:block;}
+  .vitem .cap{margin-top:10px;}
+  ul.plain{list-style:none;}
+  ul.plain li{font-size:15px;padding:7px 0;border-bottom:1px solid var(--line);}
+  ul.plain li:last-child{border-bottom:none;}
+  footer{border-top:1px solid var(--line);margin-top:44px;padding-top:24px;color:var(--sub);font-size:13px;}
+  #lightbox{position:fixed;inset:0;background:rgba(0,0,0,.88);display:none;align-items:center;justify-content:center;z-index:50;cursor:zoom-out;}
+  #lightbox img{max-width:94vw;max-height:94vh;}
+  @media (max-width:560px){
+    .wrap{padding:48px 20px 64px;}
+    .shots,.videos{grid-template-columns:1fr;}
+    h1{font-size:26px;}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <h1>尹磊磊</h1>
+    <div class="role">新媒体运营实习 · 黄河交通学院 物联网工程 大四在读</div>
+    <p class="intro">从 2026 年 4 月开始自己运营一个抖音健康科普账号，选题、文案、剪辑、发布、日常运营都是我一个人。视频的画面和配音用 AI 工具做，内容和账号是我自己在管。</p>
+  </header>
+
+  <section>
+    <h2>账号数据</h2>
+    <div class="rows">
+      <div><span class="k">抖音账号</span><span class="v">每天学点营养</span></div>
+      <div><span class="k">粉丝</span><span class="v">1550</span></div>
+      <div><span class="k">累计获赞</span><span class="v">9321</span></div>
+      <div><span class="k">作品</span><span class="v">37 条</span></div>
+      <div><span class="k">单条最高播放</span><span class="v">22.09 万</span></div>
+    </div>
+    <div class="shots" style="margin-top:26px;">
+      <div>
+        <img src="douyin-home.jpg" alt="抖音账号主页" onclick="zoom(this)">
+        <div class="cap">账号主页，点图可放大</div>
+      </div>
+      <div>
+        <img src="douyin-data.jpg" alt="代表作后台数据" onclick="zoom(this)">
+        <div class="cap">代表作的后台数据，点图可放大</div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>代表作</h2>
+    <p class="body">《蛋白质的残酷账本》，2026 年 5 月 7 日发布。播放 22.09 万，涨粉 587，点赞 3036。这个账号的选题基本都是这个路子：把一个营养概念算成身体能感觉到的账。</p>
+  </section>
+
+  <section>
+    <h2>剪辑作品</h2>
+    <div class="videos">
+      <div class="vitem">
+        <video src="nebe.mp4" poster="poster-nebe.jpg" controls playsinline preload="none"></video>
+        <div class="cap">自己剪的练习片：干发慕斯信息流，16 秒</div>
+      </div>
+      <div class="vitem">
+        <video src="genlian.mp4" poster="poster-genlian.jpg" controls playsinline preload="none"></video>
+        <div class="cap">跟练练习作品，非原创选题，只看剪辑手法，1 分 54 秒</div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>能做的事</h2>
+    <ul class="plain">
+      <li>短视频全流程：选题、文案、拍摄、剪映剪辑、发布</li>
+      <li>账号日常运营，内容排期</li>
+      <li>活动执行：和乐队办过两届小型音乐节，每届近 100 人，节目安排、宣传、设备协调都参与了</li>
+      <li>驻唱和商演吉他手，能出镜、不怯场</li>
+      <li>持有 C1 驾照</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>到岗时间</h2>
+    <p class="body">一周内可到岗，每周 5 天，能实习到 2027 年 3 月中旬。大四课程已经结束，实习期间不用回学校上课。</p>
+  </section>
+
+  <footer>抖音「每天学点营养」· 抖音号 55052806770</footer>
+
+</div>
+<div id="lightbox" onclick="this.style.display='none'"><img id="lbimg" src="" alt=""></div>
+<script>
+  function zoom(el){
+    var lb=document.getElementById('lightbox');
+    document.getElementById('lbimg').src=el.src;
+    lb.style.display='flex';
+  }
+  document.addEventListener('keydown',function(e){
+    if(e.key==='Escape'){document.getElementById('lightbox').style.display='none';}
+  });
+</script>
+</body>
+</html>
